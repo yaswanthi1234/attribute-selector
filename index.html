@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .md{
+            border:2px solid black;
+            background-color:beige;
+            border-radius: 250px;
+            margin-left: 450px;
+            margin-right: 400px;
+            height:800px;
+            width:600px;
+        }
+        
+        [type="text"]{
+            position: relative;
+            color:blueviolet; 
+        }
+        [for]{
+            color:green;
+        }
+        [type="submit"]{
+            position: relative;
+            font-size: 15px;
+            color:blue;
+        }
+        [for="fle"]{
+            position: relative;
+            left:5px;
+            color:darkcyan;
+        }
+        [id="fle"]{
+            position: relative;
+            left:40px;
+        }
+        
+    </style>
+        
+</head>
+<body>
+    <div class="md">
+    <center>
+        
+        <form method="post">
+        <h2>Registration Form</h2><br>
+        <label for="fname">First Name</label><br>
+        <input value="yash" disabled id="fname" type="text"/><br><br>
+        <label for="sname">Second Name</label><br>
+        <input id="sname"  type="text"/><br><br>
+        <label for="email">Email</label><br>
+        <input placeholder="korchipatiy@gmail.com" id="email" name="email" type="text"/><br><br>
+        <label for="pass">password</label><br>
+        <input type="text" id="pass" /><br><br>
+        <label for="tel">Telephone</label><br>
+        <input id="tele" type="num" placeholder="12345678" pattern="[0-9] {3,10}"/><br><br>
+        <label for="date">DOB</label><br>
+        <input id="date" type="date"  /><br><br>
+        <label for="gender">gender: </label><br>
+        <label for="f">female</label>
+        <input type="radio" id="f" value="female" name="gender"/>
+        <label for="m">male</label>
+        <input type="radio" id="m" value="male" name="gender"/><br><br>
+        <label for="rag">Range</label><br>
+        <input type="range" id="rag"/><br>
+        <label for="fle">File</label><br>
+        <input type="file" id="fle"/><br><br>
+        <label for="Course">Course: </label><br>
+        <label for="optn1">forntend</label>
+        <input id="optn1" type="checkbox" name="course" value="forntend"/>
+        <label for="optn1">Backend</label>
+        <input id="optn1" type="checkbox" name="course" value="Backend"/><br> <br> 
+        <select name="fav course" id="course">
+            <option value="python">python</option>
+            <option value="javascript">javascript</option>
+        </select><br><br>
+        <label for="add">address</label><br>
+        <input id="add" type="text" /><br><br>
+        <input type="submit"/>
+        
+    </form>
+       </center> 
+    </div>
+</body>
+</html>
